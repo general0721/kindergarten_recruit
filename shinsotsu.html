@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>【公式】そらいろ幼稚園 新卒採用サイト</title>
+<meta name="description" content="学校法人そらいろ学園 そらいろ幼稚園の新卒採用サイト。2028年卒の幼稚園教諭を募集しています。">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="そらいろ幼稚園 新卒採用サイト">
+<meta property="og:description" content="あそびの中に、まなびがいっぱい。そらいろ幼稚園の2028年新卒採用サイト（架空の幼稚園のサンプルです）">
+<meta property="og:image" content="https://general0721.github.io/kindergarten_recruit/images/hq/fv1.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Yusei+Magic&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#45a3de;
+  --sky-d:#2b7fbf;
+  --sky-l:#cfe8f8;
+  --sky-ll:#eaf6fd;
+  --sky-bg:#f4faff;
+  --yellow:#f7d461;
+  --yellow-l:#fff3c4;
+  --text:#2f4558;
+  --text-l:#64798c;
+  --line:#2f4558;
+  --hand:"Yusei Magic","Zen Maru Gothic",sans-serif;
+  --en:"Fredoka","Zen Maru Gothic",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Zen Maru Gothic",sans-serif;font-weight:500;color:var(--text);background:var(--sky-bg);line-height:1.9;letter-spacing:.06em;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:radial-gradient(#d7ebf8 1.4px,transparent 1.6px);background-size:22px 22px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.inner{width:min(1120px,100% - 40px);margin-inline:auto;position:relative}
+.cover{width:100%;height:100%;object-fit:cover}
+.pc{display:inline}.sp{display:none}
+section[id]{scroll-margin-top:90px}
+
+/* ---------- motion ---------- */
+.rv{opacity:0;transform:translateY(30px) scale(.98);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.3,1.2)}
+.rv.is-in{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}
+.fuwa{animation:fuwa 5s ease-in-out infinite}
+.fuwa.d2{animation-delay:-1.7s}.fuwa.d3{animation-delay:-3.4s}
+@keyframes fuwa{50%{transform:translateY(-12px) rotate(4deg)}}
+.yura{animation:yura 3.6s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes yura{50%{transform:rotate(-7deg)}}
+.deco{position:absolute;pointer-events:none;z-index:1;height:auto}
+
+/* ---------- header ---------- */
+.hd{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:60;width:min(1240px,100% - 28px);height:74px;background:#fff;border-radius:999px;display:flex;align-items:center;gap:18px;padding:0 10px 0 26px;box-shadow:0 6px 24px rgba(43,127,191,.12);transition:.3s}
+.hd.is-scrolled{top:8px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;flex:none}
+.logo img{width:46px}
+.logo__txt{display:flex;flex-direction:column;line-height:1.15}
+.logo__ja{font-family:var(--hand);font-size:21px;letter-spacing:.12em;white-space:nowrap}
+.logo__ja b{color:var(--sky);font-weight:400}
+.logo__en{font-family:var(--en);font-weight:600;font-size:9px;letter-spacing:.24em;color:var(--sky);white-space:nowrap}
+.hd__badge{font-size:11px;font-weight:700;color:var(--sky-d);background:var(--sky-ll);border-radius:999px;padding:3px 12px;white-space:nowrap}
+.hd__nav{display:flex;gap:2px;margin-left:auto}
+.hd__nav a{display:flex;flex-direction:column;align-items:center;font-size:11.5px;font-weight:700;padding:2px 10px;border-radius:14px;transition:.25s;white-space:nowrap}
+.hd__nav a img{width:34px;height:30px;object-fit:contain;transition:.3s}
+.hd__nav a:hover{background:var(--sky-ll)}
+.hd__nav a:hover img{transform:translateY(-3px) rotate(-8deg)}
+.hd__entry{display:flex;align-items:center;gap:8px;height:54px;padding:0 26px;border-radius:999px;background:var(--sky);color:#fff;font-weight:900;font-size:15px;letter-spacing:.1em;box-shadow:0 4px 0 var(--sky-d);transition:.2s;white-space:nowrap}
+.hd__entry:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--sky-d)}
+.hd__entry img{width:26px;filter:brightness(0) invert(1)}
+.menu-btn{display:none;width:52px;height:52px;border-radius:50%;background:var(--sky-ll);position:relative;flex:none}
+.menu-btn span{position:absolute;left:14px;width:24px;height:2.5px;border-radius:2px;background:var(--text);transition:.3s}
+.menu-btn span:nth-child(1){top:18px}.menu-btn span:nth-child(2){top:25px}.menu-btn span:nth-child(3){top:32px}
+.is-menu .menu-btn span:nth-child(1){top:25px;transform:rotate(45deg)}
+.is-menu .menu-btn span:nth-child(2){opacity:0}
+.is-menu .menu-btn span:nth-child(3){top:25px;transform:rotate(-45deg)}
+.gnav{position:fixed;inset:0;z-index:55;background:var(--sky-ll);display:flex;align-items:center;justify-content:center;padding:110px 20px 40px;opacity:0;visibility:hidden;transition:.35s;overflow:auto}
+.is-menu .gnav{opacity:1;visibility:visible}
+.gnav ul{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:min(520px,100%)}
+.gnav a{display:flex;align-items:center;gap:12px;background:#fff;border-radius:22px;padding:12px 16px;font-weight:700}
+.gnav a img{width:40px;height:36px;object-fit:contain}
+
+/* ---------- FV ---------- */
+.fv{position:relative;padding:112px 20px 70px}
+.fv__wrap{position:relative;width:min(1240px,100%);margin:auto}
+.fv__arch{position:relative;height:min(76vh,700px);min-height:460px;border-radius:min(46vw,560px) min(46vw,560px) 48px 48px/340px 340px 48px 48px;overflow:hidden;border:10px solid #fff;box-shadow:0 20px 50px rgba(43,127,191,.18)}
+.fv__slide{position:absolute;inset:0;opacity:0;transition:opacity 1.6s}
+.fv__slide.is-on{opacity:1}
+.fv__slide img{animation:zoom 10s linear infinite alternate}
+@keyframes zoom{to{transform:scale(1.08)}}
+.fv__arch::after{content:"";position:absolute;inset:auto 0 0;height:45%;background:linear-gradient(transparent,rgba(20,60,100,.35))}
+.fv__copy{position:absolute;left:0;right:0;bottom:-34px;z-index:3;text-align:center}
+.fv__sub{display:inline-block;background:#fff;color:var(--sky-d);font-weight:900;font-size:clamp(13px,1.4vw,17px);letter-spacing:.2em;padding:6px 26px;border-radius:999px;box-shadow:0 4px 0 var(--sky-l)}
+.fv__main{font-family:var(--hand);font-weight:400;font-size:clamp(36px,6.2vw,84px);line-height:1.25;letter-spacing:.04em;color:#fff;margin-top:6px;white-space:nowrap;text-shadow:3px 3px 0 var(--sky-d),-2px 2px 0 var(--sky-d),2px -2px 0 var(--sky-d),-2px -2px 0 var(--sky-d),0 6px 0 var(--sky-d)}
+.fv__main span{display:inline-block;animation:pyon 2.4s ease-in-out infinite;animation-delay:calc(var(--i)*.09s)}
+.fv__main .em{color:var(--yellow)}
+@keyframes pyon{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-10px)}}
+.fv__dots{position:absolute;right:46px;bottom:56px;z-index:3;display:flex;gap:8px}
+.fv__dots button{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.6);transition:.3s}
+.fv__dots button.is-on{background:var(--yellow);width:30px;border-radius:999px}
+.doodle{position:absolute;z-index:2;pointer-events:none;fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- icon nav ---------- */
+.inav{position:relative;z-index:4;margin-top:20px}
+.inav ul{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;width:min(1000px,100% - 40px);margin:auto}
+.inav a{display:flex;flex-direction:column;align-items:center;gap:6px;background:#fff;border-radius:28px;padding:16px 8px 14px;font-weight:700;font-size:13.5px;box-shadow:0 5px 0 var(--sky-l);transition:.25s;text-align:center;line-height:1.4}
+.inav a:hover{transform:translateY(-6px) rotate(-2deg);box-shadow:0 10px 0 var(--sky-l)}
+.inav a img{height:66px;width:auto;transition:.3s}
+.inav a:hover img{transform:scale(1.1) rotate(6deg)}
+.inav li:nth-child(even) a{margin-top:18px}
+
+/* ---------- section common ---------- */
+.sec{position:relative;padding:130px 0}
+.ttl{position:relative;text-align:center;margin-bottom:64px;z-index:2}
+.ttl__en{display:block;font-family:var(--en);font-weight:700;font-size:clamp(54px,9vw,120px);line-height:.9;color:#fff;-webkit-text-stroke:2px #b9dcf3;letter-spacing:.02em}
+.ttl__ja{position:relative;display:inline-block;font-family:var(--hand);font-weight:400;font-size:clamp(28px,3.6vw,42px);letter-spacing:.14em;margin-top:-26px;padding:0 70px 14px}
+.ttl__ja::after{content:"";position:absolute;left:60px;right:60px;bottom:0;height:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 12'%3E%3Cpath d='M0 6q5-6 10 0t10 0 10 0 10 0' fill='none' stroke='%2345a3de' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x center/40px 12px}
+.ttl__ja img{position:absolute;top:50%;width:52px;transform:translateY(-60%)}
+.ttl__ja img:first-child{left:0}
+.ttl__ja img:last-child{right:0}
+.ttl__lead{margin-top:18px;color:var(--text-l);font-weight:700}
+.ttl--l{text-align:left}
+.ttl--l .ttl__ja{padding-left:0}
+.ttl--l .ttl__ja::after{left:0}
+.blob{position:absolute;z-index:0;pointer-events:none;border-radius:58% 42% 50% 50%/48% 56% 44% 52%}
+.blob--dot{background-image:radial-gradient(rgba(255,255,255,.75) 2px,transparent 2.4px);background-size:14px 14px}
+.wave{position:absolute;left:0;width:100%;height:80px;pointer-events:none;z-index:0}
+.wave--t{top:-79px}
+.wave path{fill:currentColor}
+.bg-white{background:#fff;color:#fff}
+.bg-sky{background:var(--sky-ll);color:var(--sky-ll)}
+.bg-yellow{background:#fffbe9;color:#fffbe9}
+.bg-white>:not(.wave),.bg-sky>:not(.wave),.bg-yellow>:not(.wave){color:var(--text)}
+
+.btn{display:inline-flex;align-items:center;gap:18px;height:58px;padding:0 14px 0 34px;border-radius:999px;background:var(--sky);color:#fff;font-weight:900;letter-spacing:.12em;box-shadow:0 5px 0 var(--sky-d);transition:.2s}
+.btn:hover{transform:translateY(3px);box-shadow:0 2px 0 var(--sky-d)}
+.btn i{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--sky);display:grid;place-items:center}
+.btn i svg{width:14px;height:14px}
+.btn--y{background:var(--yellow);color:var(--text);box-shadow:0 5px 0 #d9b33c}
+.btn--y:hover{box-shadow:0 2px 0 #d9b33c}
+.btn--y i{color:var(--text)}
+
+/* polaroid & tape */
+.polaroid{position:relative;background:#fff;padding:10px 10px 34px;border-radius:6px;box-shadow:0 10px 26px rgba(43,127,191,.16)}
+.polaroid::before{content:"";position:absolute;top:-14px;left:50%;width:90px;height:26px;transform:translateX(-50%) rotate(-4deg);background:repeating-linear-gradient(45deg,rgba(247,212,97,.85) 0 8px,rgba(255,243,196,.85) 8px 16px);z-index:2;border-radius:2px}
+.polaroid.tape-b::before{background:repeating-linear-gradient(45deg,rgba(69,163,222,.6) 0 8px,rgba(207,232,248,.85) 8px 16px)}
+.polaroid figcaption{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-family:var(--hand);font-size:14px;color:var(--text-l)}
+.polaroid .ph{overflow:hidden;border-radius:3px}
+
+/* ---------- message ---------- */
+.msg{position:relative;min-height:760px;display:grid;place-items:center}
+.msg__txt{position:relative;z-index:2;text-align:center;max-width:520px}
+.msg__txt p{font-size:16.5px;font-weight:700;line-height:2.5}
+.msg__txt p+p{margin-top:1.3em}
+.msg__txt .hand{font-family:var(--hand);font-weight:400;font-size:clamp(26px,3vw,34px);color:var(--sky-d);line-height:1.6;margin-bottom:18px}
+.msg__ph{position:absolute;width:230px;z-index:1}
+.msg__ph .ph{aspect-ratio:1}
+.msg__ph:nth-of-type(1){left:0;top:0;transform:rotate(-6deg)}
+.msg__ph:nth-of-type(2){left:3%;bottom:20px;width:200px;transform:rotate(5deg)}
+.msg__ph:nth-of-type(3){right:0;top:30px;width:210px;transform:rotate(7deg)}
+.msg__ph:nth-of-type(4){right:4%;bottom:0;width:240px;transform:rotate(-4deg)}
+
+/* ---------- area ---------- */
+.area{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
+.map{position:relative;background:#fff;border-radius:46px;padding:30px;box-shadow:0 10px 0 var(--sky-l);outline:2.5px dashed var(--sky-l);outline-offset:-14px}
+.map svg.base{width:100%;height:auto;display:block}
+.pin{position:absolute;transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center;font-weight:900;font-size:13px;animation:pin 2.4s ease-in-out infinite}
+.pin:nth-of-type(2){animation-delay:.4s}.pin:nth-of-type(3){animation-delay:.8s}
+@keyframes pin{0%,60%,100%{transform:translate(-50%,-100%)}30%{transform:translate(-50%,calc(-100% - 10px))}}
+.pin svg{width:38px;height:46px;filter:drop-shadow(0 3px 0 rgba(0,0,0,.08))}
+.pin span{background:#fff;border:2px solid var(--line);border-radius:999px;padding:0 12px;margin-top:2px;white-space:nowrap}
+.area__list{display:grid;gap:12px;margin:26px 0 34px}
+.area__list li{display:flex;align-items:center;gap:14px;background:#fff;border-radius:22px;padding:12px 18px;font-weight:700;font-size:14.5px;line-height:1.5}
+.area__list li b{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-family:var(--en);color:#fff;font-size:16px}
+.area__list small{display:block;color:var(--text-l);font-size:12px;font-weight:500}
+.bubble{position:relative;display:inline-block;background:var(--yellow-l);border-radius:24px;padding:12px 22px;font-weight:900;font-size:14px;margin-bottom:22px}
+.bubble::after{content:"";position:absolute;left:30px;bottom:-16px;border:8px solid transparent;border-top:10px solid var(--yellow-l)}
+
+/* ---------- work place ---------- */
+.wp{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.wp__card{position:relative;background:#fff;border-radius:48px;padding:46px 34px 70px;text-align:center;outline:2.5px dashed var(--sky-l);outline-offset:-14px;box-shadow:0 10px 0 var(--sky-l);transition:.3s}
+.wp__card:hover{transform:translateY(-6px) rotate(-1deg)}
+.wp__card:nth-child(2){background:#fffdf3;outline-color:#f5e3a1;box-shadow:0 10px 0 #f7e9b5}
+.wp__card h3{font-family:var(--hand);font-weight:400;font-size:28px;letter-spacing:.12em}
+.wp__card p{color:var(--text-l);font-size:14.5px;margin-top:8px}
+.wp__card .ill{height:210px;width:auto;margin:16px auto 0}
+.wp__card .btn{position:absolute;left:50%;bottom:-28px;transform:translateX(-50%);white-space:nowrap}
+.wp__card .btn:hover{transform:translate(-50%,3px)}
+
+/* ---------- staff ---------- */
+.staff{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.scard{display:block;text-align:center;transition:.3s}
+.scard:nth-child(odd){transform:rotate(-3deg)}
+.scard:nth-child(even){transform:rotate(3deg) translateY(30px)}
+.scard:hover{transform:rotate(0) translateY(-8px) scale(1.03)}
+.scard .ph{aspect-ratio:.9}
+.scard__icon{background:var(--sky-ll);display:grid;place-items:center}
+.scard__icon img{width:62%}
+.scard h3{font-family:var(--hand);font-weight:400;font-size:21px;margin-top:16px;letter-spacing:.1em}
+.scard small{display:block;font-family:var(--en);font-weight:600;color:var(--sky);font-size:13px;letter-spacing:.1em}
+
+/* ---------- data ---------- */
+.data{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.dcard{position:relative;background:#fff;padding:34px 20px 30px;text-align:center;border-radius:46% 54% 48% 52%/42% 46% 54% 58%;box-shadow:0 8px 0 var(--sky-l);transition:.3s}
+.dcard:nth-child(2n){border-radius:54% 46% 56% 44%/50% 42% 58% 50%;background:#fffdf3;box-shadow:0 8px 0 #f7e9b5}
+.dcard:hover{transform:translateY(-6px) rotate(2deg)}
+.dcard img{height:58px;width:auto;margin:0 auto}
+.dcard__label{font-weight:900;font-size:15px;margin-top:6px}
+.dcard__num{font-family:var(--en);font-weight:700;font-size:64px;line-height:1.15;color:var(--sky)}
+.dcard:nth-child(2n) .dcard__num{color:#e3b02a}
+.dcard__num small{font-family:"Zen Maru Gothic";font-size:18px;font-weight:900;color:var(--text);margin-left:4px}
+.dcard__note{font-size:12.5px;color:var(--text-l)}
+
+/* ---------- day ---------- */
+.day{position:relative;max-width:980px;margin:auto}
+.day::before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:4px dotted var(--sky-l);transform:translateX(-50%)}
+.day__row{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center;padding:16px 0}
+.day__row:nth-child(even) .day__ph{order:2}
+.day__row:nth-child(even) .day__txt{text-align:right}
+.day__time{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;width:78px;height:78px;border-radius:50%;background:#fff;border:3px solid var(--sky);display:grid;place-items:center;font-family:var(--en);font-weight:700;font-size:19px;color:var(--sky-d)}
+.day__row:nth-child(even) .day__time{border-color:var(--yellow);color:#c7951a}
+.day__ph{width:min(360px,100%);justify-self:end}
+.day__row:nth-child(odd) .day__ph{transform:rotate(-3deg)}
+.day__row:nth-child(even) .day__ph{justify-self:start;transform:rotate(3deg)}
+.day__ph .ph{aspect-ratio:1.4}
+.day__txt b{font-family:var(--hand);font-weight:400;font-size:24px;letter-spacing:.1em;display:block}
+.day__txt p{font-size:14.5px;color:var(--text-l);line-height:1.9;margin-top:6px}
+
+/* ---------- event ---------- */
+.ev{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.ticket{position:relative;display:block;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 8px 0 var(--sky-l);transition:.3s}
+.ticket:hover{transform:translateY(-6px)}
+.ticket .ph{aspect-ratio:1.5}
+.ticket__body{position:relative;padding:22px 24px 26px;border-top:3px dashed var(--sky-l)}
+.ticket__body::before,.ticket__body::after{content:"";position:absolute;top:-16px;width:30px;height:30px;border-radius:50%;background:var(--sky-ll)}
+.ticket__body::before{left:-15px}.ticket__body::after{right:-15px}
+.ticket time{font-family:var(--en);font-weight:700;font-size:28px;color:var(--sky);line-height:1}
+.ticket time small{font-size:14px;margin-left:6px;color:var(--text-l)}
+.ticket h3{font-weight:900;font-size:17px;margin-top:6px}
+.ticket p{font-size:13px;color:var(--text-l)}
+.ticket__tag{position:absolute;top:14px;left:14px;z-index:2;background:var(--yellow);font-weight:900;font-size:12px;padding:3px 14px;border-radius:999px}
+
+/* ---------- job (notebook) ---------- */
+.note{position:relative;max-width:900px;margin:auto;background:#fff;border-radius:22px;padding:56px 60px 50px 96px;box-shadow:0 10px 0 var(--sky-l);background-image:repeating-linear-gradient(transparent 0 47px,#e3f0fa 47px 49px);background-position:0 30px}
+.note::before{content:"";position:absolute;left:34px;top:30px;bottom:30px;width:22px;background:radial-gradient(circle at 11px 11px,var(--sky-ll) 8px,#9fcbe8 9px,transparent 10.5px) 0 0/22px 48px repeat-y}
+.note::after{content:"";position:absolute;left:76px;top:0;bottom:0;border-left:2px solid #f6c3cc}
+.note dl{display:grid;grid-template-columns:130px 1fr;font-size:14.5px}
+.note dt{font-weight:900;color:var(--sky-d);padding:12px 0;line-height:1.7}
+.note dd{padding:12px 0;line-height:1.7}
+.note__stamp{position:absolute;right:-20px;top:-30px;width:120px;height:120px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;text-align:center;font-family:var(--hand);font-size:17px;line-height:1.3;transform:rotate(12deg);box-shadow:0 5px 0 #d9b33c}
+
+/* ---------- news ---------- */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+.news .polaroid{display:block;transition:.3s;padding-bottom:16px}
+.news .polaroid:nth-child(1){transform:rotate(-2deg)}
+.news .polaroid:nth-child(3){transform:rotate(2deg)}
+.news .polaroid:hover{transform:rotate(0) translateY(-6px)}
+.news .ph{aspect-ratio:1.4}
+.news__meta{display:flex;gap:10px;align-items:center;margin:14px 6px 4px;font-family:var(--en);font-weight:600;font-size:13px;color:var(--text-l)}
+.news__meta span{font-family:"Zen Maru Gothic";font-weight:900;font-size:11px;background:var(--sky-ll);color:var(--sky-d);padding:1px 12px;border-radius:999px}
+.news h3{margin:0 6px;font-size:15.5px;font-weight:900;line-height:1.6}
+
+/* ---------- faq ---------- */
+.faq{max-width:860px;margin:auto;display:grid;gap:26px}
+.qa{display:grid;gap:12px}
+.qa__q,.qa__a{display:flex;gap:14px;align-items:flex-start}
+.qa__a{flex-direction:row-reverse}
+.qa__ic{flex:none;width:58px;height:58px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 4px 0 var(--sky-l)}
+.qa__ic img{width:76%}
+.qa__q p,.qa__a p{position:relative;border-radius:26px;padding:14px 24px;font-size:14.5px;line-height:1.9}
+.qa__q p{background:#fff;font-weight:900}
+.qa__a p{background:var(--sky);color:#fff;max-width:640px}
+.qa__q p::before{content:"";position:absolute;left:-10px;top:20px;border:8px solid transparent;border-right:10px solid #fff;border-left:0}
+.qa__a p::before{content:"";position:absolute;right:-10px;top:20px;border:8px solid transparent;border-left:10px solid var(--sky);border-right:0}
+
+/* ---------- entry ---------- */
+.entry{position:relative;background:linear-gradient(#bfe2f7,#e6f5fd);padding:150px 0 170px;overflow:hidden;text-align:center}
+.entry::before{content:"";position:absolute;top:-1px;left:0;right:0;height:46px;background:radial-gradient(circle at 50% 0,#fffbe9 34px,transparent 35.5px) 0 0/90px 46px repeat-x;z-index:1}
+.entry__ttl{font-family:var(--en);font-weight:700;font-size:clamp(70px,11vw,150px);line-height:1;color:#fff;text-shadow:0 6px 0 var(--sky)}
+.entry__lead{font-family:var(--hand);font-size:clamp(18px,2vw,24px);margin:14px 0 40px}
+.entry__btns{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;position:relative;z-index:3}
+.ebtn{display:flex;align-items:center;gap:18px;width:360px;max-width:100%;padding:16px 18px;border-radius:999px;background:#fff;font-size:22px;font-weight:900;letter-spacing:.12em;box-shadow:0 7px 0 var(--sky);transition:.2s}
+.ebtn:hover{transform:translateY(4px);box-shadow:0 3px 0 var(--sky)}
+.ebtn img{width:64px;height:64px;object-fit:contain;background:var(--sky-ll);border-radius:50%;padding:8px}
+.ebtn i{margin-left:auto;width:40px;height:40px;border-radius:50%;background:var(--sky);color:#fff;display:grid;place-items:center}
+.ebtn i svg{width:16px;height:16px}
+.ebtn--y{box-shadow:0 7px 0 #e3b02a}
+.ebtn--y:hover{box-shadow:0 3px 0 #e3b02a}
+.ebtn--y img{background:var(--yellow-l)}
+.ebtn--y i{background:var(--yellow);color:var(--text)}
+.entry__ground{position:absolute;left:0;right:0;bottom:0;height:110px;color:#fff}
+.entry__ground svg{width:100%;height:100%}
+
+/* ---------- footer ---------- */
+.ft{background:#fff;padding:30px 0 120px;font-size:13px;text-align:center}
+.ft .logo{justify-content:center}
+.ft__addr{margin-top:14px;color:var(--text-l);line-height:2}
+.ft__links{display:flex;justify-content:center;gap:10px 26px;flex-wrap:wrap;margin-top:20px;font-weight:700}
+.ft__links a:hover{color:var(--sky)}
+.ft__copy{margin-top:26px;font-family:var(--en);font-size:12px;color:#9fb6c8}
+
+/* ---------- floating ---------- */
+.ffl{position:fixed;right:20px;bottom:24px;z-index:50;width:128px;height:128px;display:grid;place-items:center;text-align:center;font-weight:900;font-size:13px;line-height:1.45;transition:.3s}
+.ffl::before{content:"";position:absolute;inset:0;background:url(images/ill2/d_cloud.png?v=5) center/contain no-repeat;filter:drop-shadow(0 6px 10px rgba(43,127,191,.25))}
+.ffl span{position:relative;margin-top:10px}
+.ffl b{display:block;color:var(--sky-d);font-size:15px}
+.ffl:hover{transform:translateY(-6px) rotate(-4deg)}
+
+@media (max-width:1180px){
+  .hd__nav{display:none}
+  .menu-btn{display:block}
+  .hd__entry{margin-left:auto}
+}
+@media (max-width:900px){
+  .inav ul{grid-template-columns:repeat(3,1fr)}
+  .inav li:nth-child(even) a{margin-top:0}
+  .area,.wp{grid-template-columns:1fr}
+  .wp{gap:70px}
+  .staff{grid-template-columns:1fr 1fr;gap:40px 20px}
+  .ev,.news{grid-template-columns:1fr 1fr}
+  .msg{min-height:0;display:block}
+  .msg__txt{margin:0 auto 40px}
+  .msg__phs{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .msg__ph{position:static;width:auto!important}
+}
+@media (max-width:640px){
+  .pc{display:none}.sp{display:inline}
+  .hd{height:62px;padding:0 6px 0 14px;gap:8px}
+  .logo img{width:36px}
+  .logo__ja{font-size:16px}
+  .logo__en{font-size:7px}
+  .hd__badge{display:none}
+  .hd__entry{height:46px;padding:0 16px;font-size:13px}
+  .hd__entry img{display:none}
+  .menu-btn{width:46px;height:46px}
+  .menu-btn span{left:11px}.menu-btn span:nth-child(1){top:15px}.menu-btn span:nth-child(2){top:22px}.menu-btn span:nth-child(3){top:29px}
+  .is-menu .menu-btn span:nth-child(1),.is-menu .menu-btn span:nth-child(3){top:22px}
+  .fv{padding:88px 10px 60px}
+  .fv__arch{height:72svh;min-height:440px;border-radius:200px 200px 30px 30px/150px 150px 30px 30px;border-width:6px}
+  .fv__copy{bottom:-24px}
+  .fv__main{white-space:normal;font-size:clamp(34px,10vw,44px)}
+  .fv__dots,.doodle{display:none}
+  .inav ul{gap:10px;width:calc(100% - 24px)}
+  .inav a{font-size:11.5px;padding:12px 4px 10px;border-radius:20px}
+  .inav a img{height:46px}
+  .sec{padding:96px 0}
+  .ttl{margin-bottom:44px}
+  .ttl__ja{padding:0 50px 12px;margin-top:-16px}
+  .ttl__ja::after{left:44px;right:44px}
+  .ttl__ja img{width:38px}
+  .wave{height:44px}.wave--t{top:-43px}
+  .data{grid-template-columns:1fr 1fr;gap:14px}
+  .dcard{padding:24px 8px 20px}
+  .dcard img{height:42px}
+  .dcard__num{font-size:42px}
+  .dcard__label{font-size:13px}
+  .day::before{left:38px}
+  .day__row{grid-template-columns:1fr;gap:12px;padding:16px 0 16px 90px}
+  .day__time{left:38px;top:40px;width:64px;height:64px;font-size:16px}
+  .day__row:nth-child(even) .day__txt{text-align:left}
+  .day__row .day__ph{order:2!important;justify-self:start!important;width:100%}
+  .ev,.news{grid-template-columns:1fr}
+  .note{padding:40px 22px 30px 64px}
+  .note::before{left:18px}
+  .note::after{left:52px}
+  .note dl{grid-template-columns:1fr}
+  .note dt{padding:10px 0 0}
+  .note dd{padding:0 0 10px}
+  .note__stamp{width:90px;height:90px;font-size:13px;right:-6px;top:-40px}
+  .wp__card{padding:40px 20px 66px}
+  .wp__card .ill{height:160px}
+  .ebtn{font-size:18px}
+  .ffl{width:96px;height:96px;font-size:11px;right:10px;bottom:14px}
+  .ffl b{font-size:12px}
+}
+
+/* ===== v4 additions ===== */
+/* loader */
+.loader{position:fixed;inset:0;z-index:200;background:radial-gradient(circle at 50% 40%,#fff 0,#eaf6fd 40%,#cfe8f8 100%);display:grid;place-items:center;clip-path:circle(150% at 50% 50%);transition:clip-path 1s cubic-bezier(.7,0,.3,1)}
+.is-loaded .loader{clip-path:circle(0% at 50% 50%);pointer-events:none}
+.loader__in{text-align:center}
+.loader__in img{width:120px;margin:0 auto;animation:pop .8s cubic-bezier(.3,1.6,.5,1) both,kuru 6s linear infinite}
+@keyframes pop{from{transform:scale(0) rotate(-90deg)}}
+@keyframes kuru{to{rotate:360deg}}
+.loader__logo{font-family:var(--hand);font-size:30px;letter-spacing:.16em;margin-top:14px}
+.loader__logo span{display:inline-block;opacity:0;animation:drop .5s cubic-bezier(.3,1.6,.5,1) forwards;animation-delay:calc(.3s + var(--i)*.07s)}
+.loader__logo b{color:var(--sky);font-weight:400}
+@keyframes drop{from{opacity:0;transform:translateY(-24px)}to{opacity:1;transform:none}}
+.loader__dots{display:flex;gap:8px;justify-content:center;margin-top:12px}
+.loader__dots i{width:10px;height:10px;border-radius:50%;background:var(--sky);animation:pyon 1s infinite}
+.loader__dots i:nth-child(2){background:var(--yellow);animation-delay:.15s}
+.loader__dots i:nth-child(3){background:#f6b8c4;animation-delay:.3s}
+
+/* drifting clouds */
+.fv__sky{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.drift{position:absolute;left:0;opacity:.95;animation:drift linear infinite;filter:drop-shadow(0 6px 10px rgba(43,127,191,.08))}
+@keyframes drift{from{transform:translateX(-260px)}to{transform:translateX(calc(100vw + 60px))}}
+.fv__wrap{z-index:1}
+
+/* rotating badge */
+.badge{position:absolute;z-index:4;left:-26px;bottom:70px;width:160px;height:160px;display:grid;place-items:center}
+.badge svg{position:absolute;inset:0;width:100%;height:100%;animation:kuru 18s linear infinite}
+.badge::before{content:"";position:absolute;inset:14px;border-radius:50%;background:#fff;box-shadow:0 6px 0 var(--sky-l)}
+.badge img{position:relative;width:62px;animation:fuwa 3s ease-in-out infinite}
+.badge text{font-family:var(--en);font-weight:600;font-size:13.5px;letter-spacing:.2em;fill:var(--sky-d)}
+
+/* photo loop */
+.loop{margin-top:70px;overflow:hidden;padding:20px 0}
+.loop__track{display:flex;gap:28px;width:max-content;animation:loop 60s linear infinite}
+.loop:hover .loop__track{animation-play-state:paused}
+.loop__track figure{flex:none;height:240px;aspect-ratio:1.3;border-radius:36px;overflow:hidden;border:6px solid #fff;box-shadow:0 8px 20px rgba(43,127,191,.14)}
+.loop__track figure:nth-child(odd){transform:rotate(-3deg) translateY(10px)}
+.loop__track figure:nth-child(even){transform:rotate(3deg);aspect-ratio:.9;border-radius:50% 50% 36px 36px/40% 40% 36px 36px}
+.loop__track figure:nth-child(3n){border-radius:50%;aspect-ratio:1}
+@keyframes loop{to{transform:translateX(-50%)}}
+.mq{overflow:hidden;background:var(--sky);color:#fff;padding:12px 0;transform:rotate(-2deg);margin:40px -20px 0;box-shadow:0 6px 0 var(--sky-d)}
+.mq__track{display:flex;align-items:center;gap:30px;width:max-content;animation:loop 30s linear infinite}
+.mq__track span{font-family:var(--en);font-weight:700;font-size:30px;letter-spacing:.06em;white-space:nowrap}
+.mq__track img{height:38px;width:auto;filter:brightness(0) invert(1)}
+
+/* voice */
+.voice{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;align-items:start}
+.vcard{position:relative;background:#fff;border-radius:40px;padding:0 28px 30px;box-shadow:0 10px 0 var(--sky-l);outline:2.5px dashed var(--sky-l);outline-offset:-12px;transition:.3s;margin-top:80px}
+.vcard:nth-child(2){margin-top:120px;background:#fffdf3;outline-color:#f5e3a1;box-shadow:0 10px 0 #f7e9b5}
+.vcard:hover{transform:translateY(-8px) rotate(-1deg)}
+.vcard__face{width:170px;height:170px;margin:-80px auto 0;border-radius:50%;background:var(--sky-ll);overflow:hidden;border:6px solid #fff;box-shadow:0 6px 0 var(--sky-l);display:flex;align-items:flex-start;justify-content:center;padding-top:12px}
+.vcard:nth-child(2) .vcard__face{background:var(--yellow-l);box-shadow:0 6px 0 #f7e9b5}
+.vcard__face img{width:82%;transition:.4s}
+.vcard:hover .vcard__face img{transform:translateY(-6px) rotate(-3deg)}
+.vcard__who{text-align:center;margin-top:14px;font-size:12.5px;color:var(--text-l);font-weight:700}
+.vcard__who b{display:block;font-family:var(--hand);font-weight:400;font-size:22px;color:var(--text);letter-spacing:.1em}
+.vcard__q{position:relative;margin-top:16px;background:var(--sky-ll);border-radius:24px;padding:16px 20px;font-family:var(--hand);font-size:19px;line-height:1.6;text-align:center;color:var(--sky-d)}
+.vcard:nth-child(2) .vcard__q{background:var(--yellow-l);color:#a87a06}
+.vcard__q::before{content:"";position:absolute;left:50%;top:-14px;transform:translateX(-50%);border:10px solid transparent;border-bottom:14px solid var(--sky-ll);border-top:0}
+.vcard:nth-child(2) .vcard__q::before{border-bottom-color:var(--yellow-l)}
+.vcard p.t{font-size:14px;line-height:1.95;margin-top:14px}
+.vcard__tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.vcard__tags span{font-size:11.5px;font-weight:700;color:var(--sky-d);background:var(--sky-ll);padding:2px 12px;border-radius:999px}
+
+/* heading underline draw */
+.ttl__ja::after{clip-path:inset(0 100% 0 0);transition:clip-path 1.1s .35s ease}
+.is-in .ttl__ja::after{clip-path:inset(0 0 0 0)}
+.ttl__en{transition:letter-spacing 1.2s ease}
+.rv:not(.is-in) .ttl__en,.ttl.rv:not(.is-in) .ttl__en{letter-spacing:.3em}
+
+/* day progress line */
+.day__line{position:absolute;left:50%;top:0;bottom:0;width:4px;margin-left:-2px;background:linear-gradient(var(--sky),var(--yellow));border-radius:4px;transform-origin:top;transform:scaleY(var(--p,0));z-index:1}
+
+/* grass flowers */
+.entry__flowers{position:absolute;left:0;right:0;bottom:60px;height:90px;z-index:2;pointer-events:none}
+.entry__flowers img{position:absolute;bottom:0;height:auto}
+
+/* button sparkle */
+.btn,.ebtn,.hd__entry{position:relative}
+.btn::after,.ebtn::after{content:"";position:absolute;right:-10px;top:-12px;width:26px;height:26px;background:url(images/ill2/d_star.png?v=5) center/contain no-repeat;opacity:0;transform:scale(.3) rotate(-40deg);transition:.35s cubic-bezier(.3,1.6,.5,1)}
+.btn:hover::after,.ebtn:hover::after{opacity:1;transform:scale(1) rotate(0)}
+
+@media (max-width:900px){
+  .voice{grid-template-columns:1fr;max-width:460px;margin:auto;gap:10px}
+  .vcard:nth-child(2){margin-top:90px}
+}
+@media (max-width:640px){
+  .badge{width:104px;height:104px;left:-6px;bottom:auto;top:-20px}
+  .badge text{font-size:13px}
+  .badge img{width:40px}
+  .loop{margin-top:50px}
+  .loop__track figure{height:160px}
+  .mq__track span{font-size:22px}
+  .day__line{left:38px}
+  .entry__flowers{display:none}
+  .entry .deco.fuwa{display:none}
+  .entry{padding:110px 0 190px}
+}
+
+/* ===== v5：絵本タッチに合わせてかわいく ===== */
+:root{
+  --sky:#5ab3e6;--sky-d:#3f98d0;--sky-l:#cfe8f8;--sky-ll:#eaf6fd;--sky-bg:#f7fbff;
+  --pink:#f5a9bc;--pink-d:#e2869d;--pink-l:#fde8ee;
+  --mint:#8fd3b3;--mint-d:#62b892;--mint-l:#e3f6ec;
+  --yellow:#f9d56e;--yellow-l:#fff4c9;
+  --text:#5a4640;--text-l:#8c7a72;--line:#6b4f45;
+}
+body::before{background-image:radial-gradient(#d9edf9 1.6px,transparent 1.9px),radial-gradient(#fbe1e8 1.6px,transparent 1.9px);background-size:28px 28px;background-position:0 0,14px 14px}
+.logo img{width:50px}
+.logo__ja b{color:var(--pink-d)}
+.hd{box-shadow:0 6px 0 var(--sky-l),0 10px 30px rgba(63,152,208,.12)}
+.hd__entry{background:var(--pink);box-shadow:0 4px 0 var(--pink-d)}
+.hd__entry:hover{box-shadow:0 2px 0 var(--pink-d)}
+.hd__entry img{filter:none}
+.hd__nav a img{width:38px;height:34px}
+
+/* 英字見出しをカラフルに */
+.ttl__en{color:var(--sky);-webkit-text-stroke:0;font-size:clamp(46px,7.4vw,98px);text-shadow:0 5px 0 #fff,0 -2px 0 #fff,3px 0 0 #fff,-3px 0 0 #fff}
+.ttl__en span{display:inline-block;transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.ttl__en span:nth-child(4n+1){color:var(--sky);transform:rotate(-6deg)}
+.ttl__en span:nth-child(4n+2){color:var(--pink);transform:rotate(4deg) translateY(-4px)}
+.ttl__en span:nth-child(4n+3){color:#f2c44c;transform:rotate(-3deg) translateY(3px)}
+.ttl__en span:nth-child(4n){color:var(--mint);transform:rotate(6deg)}
+.ttl:hover .ttl__en span{transform:translateY(-8px) rotate(0)}
+.ttl__ja{margin-top:-8px}
+.ttl__ja::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 12'%3E%3Cpath d='M0 6q5-6 10 0t10 0 10 0 10 0' fill='none' stroke='%23f5a9bc' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")}
+.ttl__ja img{width:62px}
+
+/* 背景色のバリエーション */
+.bg-mint{background:var(--mint-l);color:var(--mint-l)}
+.bg-pink{background:var(--pink-l);color:var(--pink-l)}
+.bg-mint>:not(.wave),.bg-pink>:not(.wave){color:var(--text)}
+.bg-pink .ticket__body::before,.bg-pink .ticket__body::after{background:var(--pink-l)}
+.bg-pink .ticket{box-shadow:0 8px 0 #f8cdd8}
+.bg-pink .ticket__body{border-top-color:#f8cdd8}
+.bg-pink .ticket time{color:var(--pink-d)}
+
+/* パステル4色を順番に */
+.dcard:nth-child(4n+1){background:#fff;box-shadow:0 8px 0 var(--sky-l)}
+.dcard:nth-child(4n+2){background:var(--pink-l);box-shadow:0 8px 0 #f8cdd8}
+.dcard:nth-child(4n+3){background:#fffdf3;box-shadow:0 8px 0 #f7e9b5}
+.dcard:nth-child(4n){background:#fff;box-shadow:0 8px 0 #c6ead8}
+.dcard:nth-child(4n+2) .dcard__num{color:var(--pink-d)}
+.dcard:nth-child(4n+3) .dcard__num{color:#e0a920}
+.dcard:nth-child(4n) .dcard__num{color:var(--mint-d)}
+.dcard img{height:74px}
+.vcard:nth-child(3){background:#f6fcf9;outline-color:#bfe6d3;box-shadow:0 10px 0 #c6ead8}
+.vcard:nth-child(3) .vcard__face{background:var(--mint-l);box-shadow:0 6px 0 #c6ead8}
+.vcard:nth-child(3) .vcard__q{background:var(--mint-l);color:#3f9b74}
+.vcard:nth-child(3) .vcard__q::before{border-bottom-color:var(--mint-l)}
+.vcard:nth-child(3) .vcard__tags span{background:var(--mint-l);color:#3f9b74}
+.vcard__face{align-items:flex-end;padding:0}
+.vcard__face img{width:100%}
+.wp__card:nth-child(2){background:#fff7f9;outline-color:#f8cdd8;box-shadow:0 10px 0 #f8cdd8}
+.wp__card .ill{height:230px}
+.polaroid.tape-p::before{background:repeating-linear-gradient(45deg,rgba(245,169,188,.75) 0 8px,rgba(253,232,238,.9) 8px 16px)}
+.day__row:nth-child(3n) .day__time{border-color:var(--pink);color:var(--pink-d)}
+.day__row:nth-child(4n) .day__time{border-color:var(--mint);color:var(--mint-d)}
+.day__time{border-width:4px;border-style:dashed}
+.area__list li b{box-shadow:0 3px 0 rgba(0,0,0,.08)}
+.note__stamp{background:var(--pink);color:#fff;box-shadow:0 5px 0 var(--pink-d)}
+.note dt{color:var(--sky-d)}
+
+/* FAQ：子どもが質問・そらまるが答える */
+.qa__ic{width:72px;height:72px;overflow:hidden;align-items:end}
+.qa__ic img{width:88%}
+.qa__q .qa__ic{background:var(--yellow-l)}
+.qa__a .qa__ic{background:var(--sky-ll)}
+.qa__a p{background:var(--sky)}
+
+/* FV：アーチのふちから子どもがのぞく */
+.fv__kid{position:absolute;z-index:4;bottom:-6px;width:clamp(90px,10vw,150px);pointer-events:none}
+.fv__dots{display:none}
+.badge{left:auto;right:-30px;bottom:auto;top:30%}
+.fv__kid--l{left:-1%;animation:hop 3.2s ease-in-out infinite}
+.fv__kid--r{right:-1%;animation:hop 3.2s ease-in-out -1.6s infinite}
+@keyframes hop{0%,70%,100%{transform:translateY(0)}80%{transform:translateY(-14px) rotate(-3deg)}90%{transform:translateY(0)}}
+.badge img{width:78px}
+
+/* マーキーはイラストをそのままの色で */
+.mq{background:var(--sky);box-shadow:0 6px 0 var(--sky-d)}
+.mq__track img{height:46px;filter:none}
+
+/* ローダー：そらまるがぴょん */
+.loader__in img{width:130px;animation:pop .8s cubic-bezier(.3,1.6,.5,1) both,boing 1s ease-in-out .8s infinite}
+@keyframes boing{50%{transform:translateY(-16px) scale(1.04,.96)}}
+.loader__logo b{color:var(--pink-d)}
+
+/* 追従ボタン：そらまるが手をふる */
+.ffl{width:132px;height:auto;display:flex;flex-direction:column;align-items:center}
+.ffl::before{display:none}
+.ffl img{width:96px;animation:boing 2.4s ease-in-out infinite;filter:drop-shadow(0 6px 8px rgba(63,152,208,.2))}
+.ffl span{margin-top:-6px;background:#fff;border-radius:999px;padding:4px 14px;box-shadow:0 4px 0 var(--pink);white-space:nowrap;font-size:12px}
+.ffl b{display:inline;color:var(--pink-d);font-size:14px;margin-right:2px}
+
+/* エントリー */
+.entry__ttl{text-shadow:0 6px 0 var(--sky),0 12px 0 rgba(63,152,208,.25)}
+.entry__mascot{display:block;width:clamp(90px,10vw,130px);margin:0 auto -14px;animation:boing 2s ease-in-out infinite}
+.ebtn{box-shadow:0 7px 0 var(--sky)}
+.ebtn--y{box-shadow:0 7px 0 var(--pink)}
+.ebtn--y:hover{box-shadow:0 3px 0 var(--pink)}
+.ebtn--y img{background:var(--pink-l)}
+.ebtn--y i{background:var(--pink);color:#fff}
+
+/* 散らばる子どもたち */
+.kid{position:absolute;z-index:1;pointer-events:none;height:auto}
+
+@media (max-width:640px){
+  .fv__kid,.badge{display:none}
+  .entry .deco[src*=s_hands]{width:130px!important;left:2%!important;bottom:56px!important}
+  .entry .deco[src*=s_run]{width:180px!important;right:2%!important;bottom:50px!important}
+  .ttl__ja img{width:42px}
+  .qa__ic{width:56px;height:56px}
+  .ffl{width:96px;right:8px;bottom:10px}
+  .ffl img{width:70px}
+  .ffl span{font-size:10px;padding:3px 10px}
+  .ffl b{font-size:11px}
+  .kid{display:none}
+  .wp__card .ill{height:170px}
+}
+
+/* ===== v6：FVを2カラム（コピー＋写真コラージュ）に ===== */
+.hero{position:relative;padding:150px 20px 110px}
+.hero__in{position:relative;z-index:1;width:min(1240px,100%);margin:auto;display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:30px}
+.hero__txt{position:relative;padding-left:clamp(0px,2vw,30px)}
+.hero__tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:5px 22px 5px 8px;font-weight:900;font-size:14px;letter-spacing:.14em;color:var(--pink-d);box-shadow:0 4px 0 var(--pink-l)}
+.hero__tag img{width:36px}
+.hero__main{font-family:var(--hand);font-weight:400;font-size:clamp(44px,5.4vw,80px);line-height:1.32;letter-spacing:.04em;color:var(--text);margin-top:24px}
+.hero__main span{display:inline-block;animation:pyon 2.4s ease-in-out infinite;animation-delay:calc(var(--i)*.09s)}
+.hero__main .em{color:var(--pink-d);background:linear-gradient(transparent 64%,rgba(249,213,110,.7) 64% 92%,transparent 92%)}
+.hero__lead{margin-top:22px;font-size:clamp(14px,1.15vw,16px);font-weight:700;line-height:2.2;color:var(--text-l)}
+.hero__btns{display:flex;gap:16px;flex-wrap:wrap;margin-top:34px}
+.btn--p{background:var(--pink);box-shadow:0 5px 0 var(--pink-d)}
+.btn--p:hover{box-shadow:0 2px 0 var(--pink-d)}
+.btn--p i{color:var(--pink-d)}
+.btn--w{background:#fff;color:var(--sky-d);box-shadow:0 5px 0 var(--sky-l)}
+.btn--w:hover{box-shadow:0 2px 0 var(--sky-l)}
+.btn--w i{background:var(--sky);color:#fff}
+.hero__pics{position:relative;aspect-ratio:1/.9}
+.hero__ph{position:absolute;left:6%;top:0;width:84%;height:84%;overflow:hidden;border:10px solid #fff;border-radius:48% 52% 46% 54%/55% 50% 50% 45%;box-shadow:0 18px 40px rgba(63,152,208,.18);animation:morph 12s ease-in-out infinite}
+@keyframes morph{50%{border-radius:56% 44% 52% 48%/46% 56% 44% 54%}}
+.hero__sub{position:absolute;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 12px 26px rgba(63,152,208,.16)}
+.hero__sub--a{width:34%;right:0;bottom:0;animation:fuwa 6s ease-in-out infinite}
+.hero__sub--b{width:25%;left:0;bottom:4%;animation:fuwa 6s ease-in-out -3s infinite}
+.hero .badge{left:auto;right:0;top:-2%;bottom:auto;width:140px;height:140px}
+.hero__kid{position:absolute;z-index:3;left:30%;bottom:-4%;width:clamp(80px,9vw,130px);animation:hop 3.2s ease-in-out infinite}
+@media (max-width:900px){
+  .hero{padding:104px 16px 70px}
+  .hero__in{grid-template-columns:1fr;gap:26px}
+  .hero__pics{order:-1;width:min(560px,100%);margin:auto}
+  .hero__txt{text-align:center;padding:0}
+  .hero__btns{justify-content:center}
+  .hero__txt .deco{display:none}
+}
+@media (max-width:640px){
+  .hero__main{font-size:clamp(36px,10.5vw,48px);margin-top:16px}
+  .hero__lead{font-size:13.5px}
+  .hero__btns{flex-direction:column;align-items:center;gap:14px}
+  .hero__btns .btn{width:min(300px,100%);justify-content:space-between}
+  .hero__ph{border-width:6px}
+  .hero__sub{border-width:5px}
+  .hero__kid{display:block;width:72px}
+}
+</style>
+</head>
+<body>
+<div class="loader" aria-hidden="true"><div class="loader__in"><img src="images/ill2/m_banzai.png?v=5" alt=""><p class="loader__logo" data-drop>そら<b>いろ</b>幼稚園</p><div class="loader__dots"><i></i><i></i><i></i></div></div></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arrow" viewBox="0 0 16 16"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="pin" viewBox="0 0 40 50"><path d="M20 48S4 30 4 18a16 16 0 0 1 32 0c0 12-16 30-16 30z" fill="currentColor" stroke="#8a6a5c" stroke-width="2.2"/><circle cx="20" cy="18" r="6" fill="#fff"/></symbol>
+</svg>
+
+<header class="hd">
+  <a class="logo" href="shinsotsu.html">
+    <img src="images/ill2/m_smile.png?v=5" alt="">
+    <span class="logo__txt"><span class="logo__ja">そら<b>いろ</b>幼稚園</span><span class="logo__en">SORAIRO KINDERGARTEN</span></span>
+  </a>
+  <span class="hd__badge">新卒採用サイト</span>
+  <nav class="hd__nav">
+    <a href="#message"><img src="images/ill2/i_house.png?v=5" alt="">園のこと</a>
+    <a href="#voice"><img src="images/ill2/i_apron.png?v=5" alt="">先輩の声</a>
+    <a href="#day"><img src="images/ill2/i_clock.png?v=5" alt="">先生の1日</a>
+    <a href="#event"><img src="images/ill2/i_calendar.png?v=5" alt="">見学会</a>
+    <a href="#job"><img src="images/ill2/i_note.png?v=5" alt="">募集要項</a>
+    <a href="#faq"><img src="images/ill2/i_piano.png?v=5" alt="">FAQ</a>
+  </nav>
+  <a class="hd__entry" href="#entry"><img src="images/ill2/d_star.png?v=5" alt="">エントリー</a>
+  <button class="menu-btn" aria-label="メニュー"><span></span><span></span><span></span></button>
+</header>
+
+<nav class="gnav">
+  <ul>
+    <li><a href="#message"><img src="images/ill2/i_house.png?v=5" alt="">園のこと</a></li>
+    <li><a href="#voice"><img src="images/ill2/i_apron.png?v=5" alt="">先輩の声</a></li>
+    <li><a href="#data"><img src="images/ill2/d_star.png?v=5" alt="">データ</a></li>
+    <li><a href="#day"><img src="images/ill2/i_clock.png?v=5" alt="">先生の1日</a></li>
+    <li><a href="#event"><img src="images/ill2/i_calendar.png?v=5" alt="">見学会</a></li>
+    <li><a href="#job"><img src="images/ill2/i_note.png?v=5" alt="">募集要項</a></li>
+    <li><a href="#faq"><img src="images/ill2/i_piano.png?v=5" alt="">よくある質問</a></li>
+    <li><a href="#entry"><img src="images/ill2/d_rainbow.png?v=5" alt="">エントリー</a></li>
+  </ul>
+</nav>
+
+<main>
+<!-- FV -->
+<section class="hero">
+  <div class="fv__sky">
+    <img class="drift" src="images/ill2/d_cloud.png?v=5" alt="" style="width:150px;top:14%;animation-duration:55s;animation-delay:-10s">
+    <img class="drift" src="images/ill2/d_cloud.png?v=5" alt="" style="width:100px;top:56%;animation-duration:70s;animation-delay:-40s">
+    <img class="drift" src="images/ill2/d_cloud.png?v=5" alt="" style="width:120px;top:82%;animation-duration:62s;animation-delay:-25s">
+    <img class="drift" src="images/ill2/d_bird.png?v=5" alt="" style="width:60px;top:30%;animation-duration:38s;animation-delay:-5s">
+  </div>
+  <div class="hero__in">
+    <div class="hero__txt">
+      <p class="hero__tag"><img src="images/ill2/m_smile.png?v=5" alt="">2028年春 新卒採用</p>
+      <h1 class="hero__main" data-split>あそびの中に<br><span class="em">まなび</span>が<br>いっぱい</h1>
+      <p class="hero__lead">その子らしさを、空いっぱいに。<br>そらいろ幼稚園で、先生としての<br class="pc">はじめの一歩をふみだしませんか。</p>
+      <div class="hero__btns">
+        <a class="btn btn--p" href="#event">見学会に申し込む<i><svg><use href="#arrow"/></svg></i></a>
+        <a class="btn btn--w" href="#message">園のことを知る<i><svg><use href="#arrow"/></svg></i></a>
+      </div>
+      <img class="deco fuwa" src="images/ill2/d_sun.png?v=5" alt="" style="width:clamp(64px,6.4vw,100px);left:clamp(-120px,-7vw,-60px);top:-30px">
+      <img class="deco fuwa d2" src="images/ill2/d_butterfly.png?v=5" alt="" style="width:clamp(44px,5vw,70px);right:6%;top:-10px">
+    </div>
+    <div class="hero__pics">
+      <div class="hero__ph">
+        <div class="fv__slide is-on"><img class="cover" src="images/hq/fv1.jpg" alt="先生と笑顔の子どもたち"></div>
+        <div class="fv__slide"><img class="cover" src="images/hq/fv4.jpg" alt="スモックを着て笑う子どもたち"></div>
+        <div class="fv__slide"><img class="cover" src="images/hq/fv5.jpg" alt="シャボン玉をふく子どもたち"></div>
+      </div>
+      <figure class="hero__sub hero__sub--a"><img class="cover" src="images/hq/dance1.jpg" alt="先生と手をつないで踊る子どもたち"></figure>
+      <figure class="hero__sub hero__sub--b"><img class="cover" src="images/hq/walk1.jpg" alt="先生と手をつないで歩く子ども"></figure>
+      <div class="badge"><svg viewBox="0 0 160 160"><defs><path id="circ" d="M80 80m-62 0a62 62 0 1 1 124 0a62 62 0 1 1-124 0"/></defs><text><textPath href="#circ">SORAIRO KINDERGARTEN ・ RECRUIT 2028 ・ </textPath></text></svg><img src="images/ill2/m_heart.png?v=5" alt=""></div>
+      <img class="hero__kid" src="images/ill2/k_jump.png?v=5" alt="">
+      <img class="deco fuwa d3" src="images/ill2/d_rainbow.png?v=5" alt="" style="width:clamp(90px,11vw,170px);left:-4%;top:-6%">
+      <img class="deco yura" src="images/ill2/d_tulip.png?v=5" alt="" style="width:clamp(40px,4.4vw,64px);right:36%;bottom:-4%">
+    </div>
+  </div>
+</section>
+
+<!-- icon nav -->
+<nav class="inav">
+  <ul>
+    <li class="rv"><a href="#message"><img src="images/ill2/i_house.png?v=5" alt="">そらいろの<br>保育</a></li>
+    <li class="rv d1"><a href="#staff"><img src="images/ill2/i_apron.png?v=5" alt="">働く先生を<br>知る</a></li>
+    <li class="rv d2"><a href="#data"><img src="images/ill2/d_star.png?v=5" alt="">数字で<br>のぞく</a></li>
+    <li class="rv"><a href="#day"><img src="images/ill2/i_clock.png?v=5" alt="">先生の<br>1日</a></li>
+    <li class="rv d1"><a href="#event"><img src="images/ill2/i_calendar.png?v=5" alt="">見学会・<br>説明会</a></li>
+    <li class="rv d2"><a href="#job"><img src="images/ill2/i_note.png?v=5" alt="">募集<br>要項</a></li>
+  </ul>
+</nav>
+
+<div class="loop" aria-hidden="true"><div class="loop__track"><figure><img class="cover" src="images/hq/fv1.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/run1.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/play1.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/msg2.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/day3.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/ev1.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/day4.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/news2.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/day5.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/read1.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/fv4.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/fv5.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/fv1.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/run1.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/play1.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/msg2.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/day3.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/ev1.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/day4.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/news2.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/day5.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/read1.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/fv4.jpg" alt="" loading="lazy"></figure><figure><img class="cover" src="images/hq/fv5.jpg" alt="" loading="lazy"></figure></div></div>
+<!-- Message -->
+<section class="sec" id="message">
+  <div data-px=".08" class="blob blob--dot" style="background-color:#dff0fb;width:420px;height:380px;left:-200px;top:60px"></div>
+  <div data-px="-.06" class="blob" style="background:var(--yellow-l);width:300px;height:280px;right:-140px;bottom:40px"></div>
+  <img class="kid fuwa" data-px=".1" src="images/ill2/k_flower.png?v=5" alt="" style="width:110px;right:6%;top:90px">
+  <div class="inner">
+    <div class="ttl rv">
+      <span class="ttl__en">Message</span>
+      <h2 class="ttl__ja"><img src="images/ill2/d_tulip.png?v=5" alt="">そらいろの保育<img src="images/ill2/d_butterfly.png?v=5" alt=""></h2>
+    </div>
+    <div class="msg">
+      <div class="msg__txt rv">
+        <p class="hand">「やってみたい！」から<br>はじまる毎日。</p>
+        <p>クラスの枠をこえて、<br>あちこちで「おはよう！」がひびく。<br>泥んこになって笑い、<br>絵本を囲んで息をのむ。</p>
+        <p>先生も子どもと一緒に、<br>毎日いろんな「はじめて」に<br>出会えるところ。</p>
+        <a class="btn" href="#" style="margin-top:30px">そらいろの保育<i><svg><use href="#arrow"/></svg></i></a>
+      </div>
+      <div class="msg__phs">
+        <figure class="msg__ph polaroid rv"><div class="ph"><img class="cover" src="images/hq/run1.jpg" alt="公園をかけまわる子どもたち"></div><figcaption>おそとで、かけっこ</figcaption></figure>
+        <figure class="msg__ph polaroid tape-b rv d1"><div class="ph"><img class="cover" src="images/hq/play1.jpg" alt="こむぎこねんどであそぶ子どもたち"></div><figcaption>さわって、ふしぎ</figcaption></figure>
+        <figure class="msg__ph polaroid tape-p rv d2"><div class="ph"><img class="cover" src="images/hq/msg2.jpg" alt="ブロックで遊ぶ子どもたち"></div><figcaption>なにつくる？</figcaption></figure>
+        <figure class="msg__ph polaroid rv d3"><div class="ph"><img class="cover" src="images/hq/day3.jpg" alt="製作をする子どもたち"></div><figcaption>せいさくの時間</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Area -->
+<section class="sec bg-sky" id="area">
+  <svg class="wave wave--t" viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 80V40C120 10 240 10 360 40s240 30 360 0 240-30 360 0 240 30 360 0v40z"/></svg>
+  <div class="inner area">
+    <div class="map rv">
+      <svg class="base" viewBox="0 0 420 320">
+        <path d="M50 70c30-40 110-50 170-36s120 0 150 40 20 110-10 150-60 70-130 70-150-10-180-60S20 110 50 70z" fill="#e3f6ec" stroke="#8a6a5c" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M14 236c60-20 90-60 140-70s110 10 150-20 70-50 106-46" fill="none" stroke="#9fd0ee" stroke-width="18" stroke-linecap="round"/>
+        <path d="M14 236c60-20 90-60 140-70s110 10 150-20 70-50 106-46" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round"/>
+        <path d="M40 128h340" stroke="#c9b3a8" stroke-width="2.2" stroke-dasharray="10 7" fill="none"/>
+      </svg>
+      <div class="pin" style="left:30%;top:44%;color:#f6b8c4"><svg><use href="#pin"/></svg><span>本園</span></div>
+      <div class="pin" style="left:64%;top:32%;color:#45a3de"><svg><use href="#pin"/></svg><span>みなみ園</span></div>
+      <div class="pin" style="left:60%;top:76%;color:#f7d461"><svg><use href="#pin"/></svg><span>かわべ園</span></div>
+      <img class="deco" src="images/ill2/s_building.png?v=5" alt="" style="width:44%;left:-6%;bottom:-16%">
+      <img class="deco fuwa" src="images/ill2/d_cloud.png?v=5" alt="" style="width:110px;right:-30px;top:-30px">
+    </div>
+    <div class="rv d1">
+      <div class="ttl ttl--l" style="margin-bottom:26px"><span class="ttl__en">Area</span><h2 class="ttl__ja">勤務地</h2></div>
+      <p style="font-weight:700">東京都多摩エリアで3つの園を運営しています。<br>配属園の希望も出せます。</p>
+      <ul class="area__list">
+        <li><b style="background:#f3a0b1">1</b><p>そらいろ幼稚園 本園<small>園児数 約180名・3年保育／預かり保育あり</small></p></li>
+        <li><b style="background:var(--sky)">2</b><p>そらいろ幼稚園 みなみ園<small>園児数 約120名・2023年開園の新しい園舎</small></p></li>
+        <li><b style="background:#e3b02a">3</b><p>そらいろ幼稚園 かわべ園<small>園児数 約90名・川沿いの自然あふれる環境</small></p></li>
+      </ul>
+      <p class="bubble">家賃補助で、はじめての一人暮らしも安心！</p><br>
+      <a class="btn" href="#">各園のご紹介<i><svg><use href="#arrow"/></svg></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Work place -->
+<section class="sec" id="workplace">
+  <div data-px=".08" class="blob blob--dot" style="background-color:#fff1bf;width:360px;height:320px;right:-160px;top:40px"></div>
+  <img class="kid" src="images/ill2/k_sand.png?v=5" alt="" style="width:110px;left:5%;bottom:60px">
+  <div class="inner">
+    <div class="ttl rv"><span class="ttl__en">Work Place</span><h2 class="ttl__ja"><img src="images/ill2/d_crayon.png?v=5" alt="">環境・制度<img src="images/ill2/d_star.png?v=5" alt=""></h2></div>
+    <div class="wp">
+      <div class="wp__card rv">
+        <h3>働きやすさの工夫</h3>
+        <p>持ち帰り仕事ゼロ・残業月3時間以内。<br>研修や福利厚生もたっぷり。</p>
+        <img class="ill" src="images/ill2/s_hands.png?v=5" alt="">
+        <a class="btn" href="#">環境・制度を見る<i><svg><use href="#arrow"/></svg></i></a>
+      </div>
+      <div class="wp__card rv d1">
+        <h3>気になるギモン</h3>
+        <p>「ピアノが苦手でも大丈夫？」<br>みんなが気になる疑問にお答えします。</p>
+        <img class="ill" src="images/ill2/s_piano.png?v=5" alt="">
+        <a class="btn btn--y" href="#faq">よくある質問<i><svg><use href="#arrow"/></svg></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Voice -->
+<section class="sec" id="voice">
+  <div data-px=".08" class="blob blob--dot" style="background-color:#fff1bf;width:340px;height:320px;left:-150px;top:120px"></div>
+  <div data-px=".08" class="blob blob--dot" style="background-color:#dff0fb;width:380px;height:340px;right:-170px;bottom:60px"></div>
+  <div class="inner">
+    <div class="ttl rv"><span class="ttl__en">Voice</span><h2 class="ttl__ja"><img src="images/ill2/d_bird.png?v=5" alt="">先輩の声<img src="images/ill2/d_tulip.png?v=5" alt=""></h2><p class="ttl__lead">そらいろで働く先生たちに、本音を聞いてみました。</p></div>
+    <div class="voice">
+      <article class="vcard rv">
+        <div class="vcard__face"><img src="images/ill2/t_1.png?v=5" alt="さき先生"></div>
+        <p class="vcard__who"><b>さき先生</b>入職2年目・年少組 副担任</p>
+        <p class="vcard__q">ピアノが苦手でも、<br>毎日が楽しい！</p>
+        <p class="t">ピアノに自信がなくて不安でしたが、先輩が空き時間に一緒に練習してくれて、今では朝の歌も弾けるように。子どもたちの「せんせい、もういっかい！」が一番うれしいです。</p>
+        <div class="vcard__tags"><span>#ピアノ苦手でした</span><span>#短大卒</span></div>
+      </article>
+      <article class="vcard rv d1">
+        <div class="vcard__face"><img src="images/ill2/t_2.png?v=5" alt="みほ先生"></div>
+        <p class="vcard__who"><b>みほ先生</b>入職5年目・年長組 担任</p>
+        <p class="vcard__q">定時で帰れるから、<br>趣味も続けられる</p>
+        <p class="t">記録はタブレットで、行事の準備も子どもと一緒に。持ち帰り仕事がないので、平日の夜は絵本カフェめぐりを楽しんでいます。気持ちに余裕があると、保育も楽しくなります。</p>
+        <div class="vcard__tags"><span>#残業ほぼゼロ</span><span>#絵本好き</span></div>
+      </article>
+      <article class="vcard rv d2">
+        <div class="vcard__face"><img src="images/ill2/t_3.png?v=5" alt="たいち先生"></div>
+        <p class="vcard__who"><b>たいち先生</b>入職3年目・年中組 担任</p>
+        <p class="vcard__q">男性の先生も、<br>のびのび活躍中！</p>
+        <p class="t">地方出身で、家賃補助を使って一人暮らしをしています。外あそびや体操が得意なので、園庭ではいつも子どもたちに囲まれています。先生同士の仲が良いのも自慢です。</p>
+        <div class="vcard__tags"><span>#一人暮らし</span><span>#外あそび担当</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Staff -->
+<section class="sec bg-white" id="staff">
+  <svg class="wave wave--t" viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 80V30C240 70 480 80 720 50S1200 0 1440 30v50z"/></svg>
+  <img class="deco fuwa" data-px=".12" src="images/ill2/d_bird.png?v=5" alt="" style="width:90px;left:8%;top:40px">
+  <div class="inner">
+    <div class="ttl rv"><span class="ttl__en">Our Staff</span><h2 class="ttl__ja"><img src="images/ill2/i_apron.png?v=5" alt="">働く先生を知る<img src="images/ill2/d_sun.png?v=5" alt=""></h2><p class="ttl__lead">先輩のリアルな声や、働き方をのぞいてみよう。</p></div>
+    <div class="staff">
+      <a class="scard rv" href="#"><figure class="polaroid"><div class="ph"><img class="cover" src="images/hq/staff_a.jpg" alt="子どもと笑顔の先輩先生"></div></figure><small>Interview</small><h3>先輩インタビュー</h3></a>
+      <a class="scard rv d1" href="#data"><figure class="polaroid tape-b"><div class="ph"><img class="cover" src="images/hq/staff_b.jpg" alt="赤ちゃんをだっこする先生" style="object-position:50% 30%"></div></figure><small>Staff Data</small><h3>データでのぞく</h3></a>
+      <a class="scard rv d2" href="#event"><figure class="polaroid"><div class="ph"><img class="cover" src="images/hq/staff_c.jpg" alt="畑で子どもと過ごす先生" style="object-position:50% 20%"></div></figure><small>Training</small><h3>実習・体験</h3></a>
+      <a class="scard rv d3" href="#"><figure class="polaroid tape-b"><div class="ph"><img class="cover" src="images/hq/staff_d.jpg" alt="先生たちと子どもたちの集合写真"></div></figure><small>School</small><h3>採用実績校</h3></a>
+    </div>
+  </div>
+</section>
+
+<!-- Data -->
+<section class="sec bg-mint" id="data">
+  <svg class="wave wave--t" viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 80V40C120 10 240 10 360 40s240 30 360 0 240-30 360 0 240 30 360 0v40z"/></svg>
+  <div class="inner">
+    <div class="ttl rv"><span class="ttl__en">Data</span><h2 class="ttl__ja"><img src="images/ill2/d_rainbow.png?v=5" alt="">数字でのぞく<br class="sp"> そらいろ<img src="images/ill2/d_cloud.png?v=5" alt=""></h2></div>
+    <div class="data">
+      <div class="dcard rv"><img src="images/ill2/i_calendar.png?v=5" alt=""><p class="dcard__label">年間休日</p><p class="dcard__num"><span data-count="125">0</span><small>日</small></p><p class="dcard__note">夏・冬・春の長期休暇あり</p></div>
+      <div class="dcard rv d1"><img src="images/ill2/i_clock.png?v=5" alt=""><p class="dcard__label">月平均残業</p><p class="dcard__num"><span data-count="2.8">0</span><small>時間</small></p><p class="dcard__note">持ち帰り仕事はゼロ</p></div>
+      <div class="dcard rv d2"><img src="images/ill2/d_sun.png?v=5" alt=""><p class="dcard__label">有給取得率</p><p class="dcard__num"><span data-count="92">0</span><small>%</small></p><p class="dcard__note">2025年度実績</p></div>
+      <div class="dcard rv"><img src="images/ill2/d_butterfly.png?v=5" alt=""><p class="dcard__label">新卒3年定着率</p><p class="dcard__num"><span data-count="94">0</span><small>%</small></p><p class="dcard__note">2021〜2023年入職者</p></div>
+      <div class="dcard rv d1"><img src="images/ill2/i_apron.png?v=5" alt=""><p class="dcard__label">先生の平均年齢</p><p class="dcard__num"><span data-count="29">0</span><small>歳</small></p><p class="dcard__note">20代の先生が約6割</p></div>
+      <div class="dcard rv d2"><img src="images/ill2/i_house.png?v=5" alt=""><p class="dcard__label">家賃補助</p><p class="dcard__num"><span data-count="3">0</span><small>万円/月</small></p><p class="dcard__note">はじめての一人暮らしも安心</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Day -->
+<section class="sec" id="day">
+  <div data-px=".08" class="blob blob--dot" style="background-color:#dff0fb;width:380px;height:360px;right:-180px;top:200px"></div>
+  <div data-px="-.06" class="blob" style="background:var(--yellow-l);width:260px;height:240px;left:-120px;bottom:200px"></div>
+  <img class="kid fuwa d2" src="images/ill2/m_read.png?v=5" alt="" style="width:120px;left:6%;top:120px">
+  <div class="inner">
+    <div class="ttl rv"><span class="ttl__en">Schedule</span><h2 class="ttl__ja"><img src="images/ill2/i_clock.png?v=5" alt="">先生の1日<img src="images/ill2/d_crayon.png?v=5" alt=""></h2><p class="ttl__lead">年中組担任・入職2年目の場合</p></div>
+    <div class="day"><span class="day__line"></span>
+      <div class="day__row rv"><span class="day__time">8:15</span><figure class="day__ph polaroid"><div class="ph"><img class="cover" src="images/hq/day1.jpg" alt=""></div></figure><div class="day__txt"><b>出勤・朝の準備</b><p>保育室の換気や、今日のあそびの準備。<br>先生同士で予定を共有します。</p></div></div>
+      <div class="day__row rv"><span class="day__time">9:00</span><figure class="day__ph polaroid tape-b"><div class="ph"><img class="cover" src="images/hq/dance1.jpg" alt=""></div></figure><div class="day__txt"><b>登園・自由あそび</b><p>「おはよう！」とお出迎え。<br>子どもが選んだあそびをとことん。</p></div></div>
+      <div class="day__row rv"><span class="day__time">10:30</span><figure class="day__ph polaroid tape-p"><div class="ph"><img class="cover" src="images/hq/day3.jpg" alt=""></div></figure><div class="day__txt"><b>クラス活動</b><p>製作や表現あそび、おさんぽなど。<br>「やってみたい」から活動をつくります。</p></div></div>
+      <div class="day__row rv"><span class="day__time">12:00</span><figure class="day__ph polaroid tape-b"><div class="ph"><img class="cover" src="images/hq/day4.jpg" alt=""></div></figure><div class="day__txt"><b>おべんとう・給食</b><p>週3回は園の給食。<br>みんなで「いただきます！」</p></div></div>
+      <div class="day__row rv"><span class="day__time">14:00</span><figure class="day__ph polaroid"><div class="ph"><img class="cover" src="images/hq/day5.jpg" alt=""></div></figure><div class="day__txt"><b>降園・お見送り</b><p>保護者の方に、今日のエピソードを<br>お伝えします。</p></div></div>
+      <div class="day__row rv"><span class="day__time">15:00</span><figure class="day__ph polaroid tape-b"><div class="ph"><img class="cover" src="images/hq/staff2.jpg" alt=""></div></figure><div class="day__txt"><b>記録・ミニ会議</b><p>タブレットで記録や連絡帳を作成。<br>おやつをつまみながら学年会議。</p></div></div>
+      <div class="day__row rv"><span class="day__time">17:00</span><figure class="day__ph polaroid tape-p"><div class="ph"><img class="cover" src="images/hq/day7.jpg" alt=""></div></figure><div class="day__txt"><b>おつかれさま！</b><p>定時で退勤。<br>平日の夜も、自分の時間を楽しめます。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Event -->
+<section class="sec bg-pink" id="event">
+  <svg class="wave wave--t" viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 80V30C240 70 480 80 720 50S1200 0 1440 30v50z"/></svg>
+  <img class="deco yura" src="images/ill2/d_tulip.png?v=5" alt="" style="width:60px;left:6%;top:60px">
+  <div class="inner">
+    <div class="ttl rv"><span class="ttl__en">Event</span><h2 class="ttl__ja"><img src="images/ill2/i_calendar.png?v=5" alt="">見学会・説明会<img src="images/ill2/d_bird.png?v=5" alt=""></h2><p class="ttl__lead">そらいろ幼稚園の雰囲気を、まずは見に来てね。</p></div>
+    <div class="ev">
+      <a class="ticket rv" href="#"><span class="ticket__tag">園見学</span><div class="ph"><img class="cover" src="images/hq/ev1.jpg" alt="保育の様子"></div><div class="ticket__body"><time>11.08<small>SAT</small></time><h3>土曜園見学会（本園）</h3><p>保育室・園庭を先輩がご案内します</p></div></a>
+      <a class="ticket rv d1" href="#"><span class="ticket__tag">オンライン</span><div class="ph"><img class="cover" src="images/hq/news1.jpg" alt="先生の読み聞かせ"></div><div class="ticket__body"><time>11.15<small>SAT</small></time><h3>オンライン説明会</h3><p>顔出しなしでOK。地方の方も歓迎</p></div></a>
+      <a class="ticket rv d2" href="#"><span class="ticket__tag">就職サポート</span><div class="ph"><img class="cover" src="images/hq/ev2.jpg" alt="ピアノ練習会"></div><div class="ticket__body"><time>11.22<small>SAT</small></time><h3>ピアノ練習会＆面接対策</h3><p>苦手な人こそ来てほしい練習会</p></div></a>
+    </div>
+    <div style="text-align:center;margin-top:50px"><a class="btn" href="#">イベント一覧<i><svg><use href="#arrow"/></svg></i></a></div>
+  </div>
+</section>
+
+<!-- Job -->
+<section class="sec" id="job">
+  <img class="kid" src="images/ill2/k_bear.png?v=5" alt="" style="width:110px;right:7%;top:110px">
+  <div class="inner">
+    <div class="ttl rv"><span class="ttl__en">Recruit</span><h2 class="ttl__ja"><img src="images/ill2/i_note.png?v=5" alt="">募集要項<img src="images/ill2/d_star.png?v=5" alt=""></h2><p class="ttl__lead">2028年3月卒業予定の方</p></div>
+    <div class="note rv">
+      <div class="note__stamp">28卒<br>募集中！</div>
+      <dl>
+        <dt>募集職種</dt><dd>幼稚園教諭（クラス担任・副担任）</dd>
+        <dt>応募資格</dt><dd>2028年3月までに幼稚園教諭免許を取得見込みの方（保育士資格の同時取得見込みの方も歓迎）</dd>
+        <dt>初任給</dt><dd>短大卒 月給228,000円／大学卒 月給235,000円<br>処遇改善手当・担任手当 含む／賞与 年2回（昨年度実績4.2ヶ月分）</dd>
+        <dt>勤務時間</dt><dd>8:15〜17:00（実働7時間45分・休憩60分）</dd>
+        <dt>休日・休暇</dt><dd>完全週休2日制（土日）・祝日／夏季・冬季・春季休暇／年間休日125日以上</dd>
+        <dt>福利厚生</dt><dd>私学共済・家賃補助（上限月30,000円）・引越し費用補助<br>入職前ピアノレッスン補助・研修費全額負担・制服貸与</dd>
+        <dt>選考方法</dt><dd>園見学またはオンライン説明会 → 書類選考 → 面接（1回）・ピアノ実技（童謡1曲）</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- News -->
+<section class="sec bg-white" id="news">
+  <svg class="wave wave--t" viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 80V40C120 10 240 10 360 40s240 30 360 0 240-30 360 0 240 30 360 0v40z"/></svg>
+  <img class="deco" src="images/ill2/s_read.png?v=5" alt="" style="width:200px;right:6%;top:-40px">
+  <div class="inner">
+    <div class="ttl rv"><span class="ttl__en">News</span><h2 class="ttl__ja"><img src="images/ill2/d_bird.png?v=5" alt="">お知らせ<img src="images/ill2/d_butterfly.png?v=5" alt=""></h2></div>
+    <div class="news">
+      <a class="polaroid rv" href="#"><div class="ph"><img class="cover" src="images/hq/news1.jpg" alt=""></div><p class="news__meta">2026.10.23<span>選考</span></p><h3>【28卒】選考エントリーの受付を開始しました</h3></a>
+      <a class="polaroid tape-b rv d1" href="#"><div class="ph"><img class="cover" src="images/hq/news2.jpg" alt=""></div><p class="news__meta">2026.10.12<span>レポート</span></p><h3>【27卒】内定者懇親会で手づくりおもちゃワークショップ</h3></a>
+      <a class="polaroid tape-p rv d2" href="#"><div class="ph"><img class="cover" src="images/hq/news3.jpg" alt=""></div><p class="news__meta">2026.10.01<span>レポート</span></p><h3>【27卒】内定式を行いました</h3></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec bg-yellow" id="faq">
+  <svg class="wave wave--t" viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 80V30C240 70 480 80 720 50S1200 0 1440 30v50z"/></svg>
+  <img class="kid fuwa" src="images/ill2/m_sleep.png?v=5" alt="" style="width:130px;left:6%;top:70px">
+  <div class="inner">
+    <div class="ttl rv"><span class="ttl__en">Q&amp;A</span><h2 class="ttl__ja"><img src="images/ill2/i_piano.png?v=5" alt="">よくある質問<img src="images/ill2/d_tulip.png?v=5" alt=""></h2></div>
+    <div class="faq">
+      <div class="qa rv"><div class="qa__q"><span class="qa__ic"><img src="images/ill2/k_wave.png?v=5" alt=""></span><p>ピアノが苦手でも大丈夫ですか？</p></div><div class="qa__a"><span class="qa__ic"><img src="images/ill2/m_smile.png?v=5" alt=""></span><p>大丈夫！入職前のピアノレッスン補助があり、入職後も先輩と練習できます。面接の実技は童謡1曲、上手さより「楽しそうに弾けるか」を見ています。</p></div></div>
+      <div class="qa rv"><div class="qa__q"><span class="qa__ic"><img src="images/ill2/k_wave.png?v=5" alt=""></span><p>1年目から担任を持ちますか？</p></div><div class="qa__a"><span class="qa__ic"><img src="images/ill2/m_smile.png?v=5" alt=""></span><p>1年目は副担任として、先輩の担任と2人でクラスを見ます。2年目以降、希望や様子を見ながら担任をお願いしています。</p></div></div>
+      <div class="qa rv"><div class="qa__q"><span class="qa__ic"><img src="images/ill2/k_wave.png?v=5" alt=""></span><p>地方からの応募でも大丈夫ですか？</p></div><div class="qa__a"><span class="qa__ic"><img src="images/ill2/m_smile.png?v=5" alt=""></span><p>大歓迎です！オンライン説明会・面接に対応。家賃補助と引越し費用補助で、一人暮らしも応援します。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Entry -->
+<section class="entry" id="entry">
+  <img class="deco fuwa" src="images/ill2/d_cloud.png?v=5" alt="" style="width:170px;left:6%;top:50px">
+  <img class="deco fuwa d2" src="images/ill2/d_cloud.png?v=5" alt="" style="width:120px;right:12%;top:30px">
+  <img class="deco fuwa d3" src="images/ill2/d_rainbow.png?v=5" alt="" style="width:180px;right:4%;top:150px">
+  <img class="deco" src="images/ill2/s_hands.png?v=5" alt="" style="width:clamp(150px,19vw,280px);left:4%;bottom:46px;z-index:2">
+  <img class="deco" src="images/ill2/s_run.png?v=5" alt="" style="width:clamp(200px,26vw,390px);right:4%;bottom:50px;z-index:2">
+  <div class="inner">
+    <img class="entry__mascot" src="images/ill2/m_wave.png?v=5" alt=""><p class="entry__ttl rv">Entry!</p>
+    <p class="entry__lead rv">いっしょに、空いっぱいの毎日をつくろう。</p>
+    <div class="entry__btns rv">
+      <a class="ebtn" href="#"><img src="images/ill2/i_note.png?v=5" alt="">エントリー<i><svg><use href="#arrow"/></svg></i></a>
+      <a class="ebtn ebtn--y" href="#event"><img src="images/ill2/i_calendar.png?v=5" alt="">見学・説明会<i><svg><use href="#arrow"/></svg></i></a>
+    </div>
+  </div>
+  <div class="entry__flowers"><img class="yura" src="images/ill2/d_tulip.png?v=5" alt="" style="left:22%;width:46px;animation-delay:-0s"><img class="yura" src="images/ill2/d_tulip.png?v=5" alt="" style="left:27%;width:36px;animation-delay:-1.2s"><img class="yura" src="images/ill2/k_flower.png?v=5" alt="" style="left:33%;width:30px;animation-delay:-0.6s"><img class="yura" src="images/ill2/d_tulip.png?v=5" alt="" style="left:66%;width:40px;animation-delay:-0.8s"><img class="yura" src="images/ill2/d_butterfly.png?v=5" alt="" style="left:71%;width:44px;animation-delay:-2s"><img class="yura" src="images/ill2/d_tulip.png?v=5" alt="" style="left:76%;width:34px;animation-delay:-1.6s"></div>
+  <div class="entry__ground"><svg viewBox="0 0 1440 110" preserveAspectRatio="none"><path d="M0 60C180 20 360 20 540 50s360 40 540 10 270-30 360-10v60H0z" fill="currentColor"/></svg></div>
+</section>
+</main>
+
+<footer class="ft">
+  <a class="logo" href="shinsotsu.html"><img src="images/ill2/m_smile.png?v=5" alt=""><span class="logo__txt"><span class="logo__ja">そら<b>いろ</b>幼稚園</span><span class="logo__en">SORAIRO KINDERGARTEN</span></span></a>
+  <p class="ft__addr">学校法人そらいろ学園<br>〒000-0000 東京都〇〇市〇〇町0-0-0／TEL 000-000-0000（新卒採用担当）</p>
+  <div class="ft__links"><a href="#message">そらいろの保育</a><a href="#area">勤務地</a><a href="#staff">働く先生</a><a href="#day">先生の1日</a><a href="#event">見学会</a><a href="#job">募集要項</a><a href="#faq">よくある質問</a><a href="#">プライバシーポリシー</a></div>
+  <p class="ft__copy">※このサイトは架空の幼稚園のサンプルです　&copy; SORAIRO GAKUEN</p>
+</footer>
+
+<a class="ffl" href="#event"><img src="images/ill2/m_wave.png?v=5" alt=""><span><b>見学会</b>受付中！</span></a>
+
+<script src="main.js?v=6"></script>
+<script>
+(() => {
+  // キャッチコピーを1文字ずつぴょんぴょん
+  document.querySelectorAll('[data-split]').forEach(el => {
+    let i = 0;
+    const walk = node => [...node.childNodes].forEach(n => {
+      if (n.nodeType === 3) {
+        const f = document.createDocumentFragment();
+        [...n.textContent].forEach(ch => { const s = document.createElement('span'); s.textContent = ch; s.style.setProperty('--i', i++); f.appendChild(s); });
+        n.replaceWith(f);
+      } else if (n.nodeName === 'SPAN') { n.style.animation = 'none'; walk(n); }
+    });
+    walk(el);
+  });
+
+  // 英字見出しを1文字ずつ色分け
+  document.querySelectorAll('.ttl__en').forEach(el => {
+    el.innerHTML = [...el.textContent].map(ch => ch === ' ' ? ' ' : `<span>${ch.replace('&','&amp;')}</span>`).join('');
+  });
+
+  // ローディング
+  const body = document.body;
+  document.querySelectorAll('[data-drop]').forEach(el => {
+    let k = 0;
+    const walk = node => [...node.childNodes].forEach(n => {
+      if (n.nodeType === 3) { const f = document.createDocumentFragment(); [...n.textContent].forEach(ch => { const sp = document.createElement('span'); sp.textContent = ch; sp.style.setProperty('--i', k++); f.appendChild(sp); }); n.replaceWith(f); }
+      else walk(n);
+    });
+    walk(el);
+  });
+  let seen = false;
+  try { seen = sessionStorage.getItem('sorairo-loaded') === '1'; sessionStorage.setItem('sorairo-loaded', '1'); } catch (e) {}
+  const t0 = performance.now();
+  const done = () => setTimeout(() => body.classList.add('is-loaded'), Math.max(0, (seen ? 300 : 1700) - (performance.now() - t0)));
+  if (document.readyState === 'complete') done(); else addEventListener('load', done);
+  setTimeout(() => body.classList.add('is-loaded'), 4000);
+
+  // パララックス・1日の線
+  const pxEls = [...document.querySelectorAll('[data-px]')];
+  const day = document.querySelector('.day'), line = document.querySelector('.day__line');
+  let ticking = false;
+  const onScroll = () => {
+    ticking = false;
+    const vh = innerHeight;
+    pxEls.forEach(el => {
+      const r = el.parentElement.getBoundingClientRect();
+      el.style.translate = `0 ${((r.top + r.height / 2) - vh / 2) * parseFloat(el.dataset.px)}px`;
+    });
+    if (day && line) {
+      const r = day.getBoundingClientRect();
+      const p = Math.min(1, Math.max(0, (vh * .6 - r.top) / r.height));
+      line.style.setProperty('--p', p.toFixed(3));
+    }
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+  // スライド
+  const slides = document.querySelectorAll('.fv__slide'), dots = document.querySelectorAll('.fv__dots button');
+  let i = 0, t;
+  const go = n => { i = n % slides.length; slides.forEach((s, k) => s.classList.toggle('is-on', k === i)); dots.forEach((d, k) => d.classList.toggle('is-on', k === i)); };
+  const start = () => { clearInterval(t); t = setInterval(() => go(i + 1), 5500); };
+  dots.forEach((d, k) => d.addEventListener('click', () => { go(k); start(); }));
+  start();
+})();
+</script>
+</body>
+</html>
